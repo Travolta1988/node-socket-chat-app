@@ -1,0 +1,135 @@
+doctype html
+html(lang='en', ng-app='chat')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title #{title}
+        link(href='assets/css/app.css', rel='stylesheet', type='text/css')
+        link(href='assets/css/main.css', rel='stylesheet', type='text/css')
+        script(src='assets/js/app.js')
+        script(src='assets/js/routes.js')
+        script(src='assets/js/angular.js')
+        //controllers
+        script(src='assets/js/controllers/mainController.js')
+    style.
+        .message-input, .message-input .inline-label, .menu-bar {margin-bottom: 0;}
+        #sidebar, .messages {border-right: 1px solid #eee;}
+        .message-side-bar {border-left: 1px solid #eee;}
+        .avatar-section {border-top: 1px solid #eee;}
+    body
+        .grid-frame
+            #sidebar.medium-grid-block.collapse.medium-3.large-3.vertical(zf-panel='', position='left')
+                .grid-content.collapse.shrink.hide-for-medium
+                    a.secondary.button.expand(href='', zf-close='') Close
+                .grid-content.collapse.shrink
+                    img(src='http://placehold.it/400x150&text=Logo')
+                .grid-content
+                    section.block-list
+                        header Rooms
+                        ul
+                            li
+                                a(href='#')
+                                    | Slam Book
+                                    span.block-list-label 7
+                            li
+                                a(href='#')
+                                    | Foundation Chat
+                                    span.block-list-label 2
+                            li
+                                a.success(href='#')
+                                    | LolCats
+                                    span.block-list-label 2
+                    section.block-list
+                        header People
+                        ul
+                            li
+                                a(href='#')
+                                    | Glen Coco
+                                    span.block-list-label 2
+                            li
+                                a.success(href='#')
+                                    | Guy Guyerson
+                                    span.block-list-label 2
+                .grid-content.collapse.shrink.avatar-section
+                    img(src='http://placehold.it/50x50')
+                    |             Regina George
+            .grid-block.collapse.medium-9.large-9.vertical
+                #header.shrink.collapse.grid-content
+                    ul.menu-bar.primary
+                        li.hide-for-medium
+                            a(zf-open='sidebar', href='#') Menu
+                        li
+                            a(href='#') Link 1
+                        li
+                            a(href='#') Link 2
+                        li
+                            a(href='#') Link 3
+                .grid-block
+                    .grid-block.small-12.medium-9.vertical
+                        .grid-content
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Cady Heron
+                            p
+                                | Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue.
+                            hr
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Kevin Gnapoor
+                            p
+                                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.
+                            hr
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Cady Heron
+                            p
+                                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.
+                            hr
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Trang Pak
+                            p
+                                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.
+                            hr
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Coach Carr
+                            p
+                                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.
+                            hr
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Cady Heron
+                            p
+                                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.
+                            hr
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Trang Pak
+                            p
+                                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.
+                            hr
+                            h4
+                                img(src='http://placehold.it/30x30')
+                                |  Cady Heron
+                            p
+                                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat.
+                            hr
+                        .message-input.grid-content.collapse.shrink
+                            span.inline-label
+                                input(type='text', placeholder='Message')
+                                a.button(href='#') Send
+                    .grid-content.medium-3.show-for-medium.message-side-bar
+                        section.block-list
+                            header In This Room
+                            ul
+                                li
+                                    a(href='#') Cady Heron
+                                li
+                                    a(href='#') Kevin Gnapoor
+                                li
+                                    a(href='#') Trang Pak
+                                li
+                                    a(href='#') Coach Carr
+                                li
+                                    a(href='#') Regina George
