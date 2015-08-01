@@ -1,10 +1,11 @@
 var express         = require('express');
 var path            = require('path');
-var logger          = require('logger');
+var bodyParser      = require('body-parser')
 var mainpage        = require('./routes/mainpage');
 var app = express();
 // routes ======================================================================
 
+app.use(bodyParser.json())
 // view engine setup
 app.set('views', path.join(__dirname, 'public/views/pages'));
 app.set('view engine', 'jade');
