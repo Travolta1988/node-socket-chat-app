@@ -47,12 +47,12 @@ html(lang='en', ng-app='greenchat')
                                 ul
                                     li(ng-repeat="room in data.rooms")
                                         a(ng-href='#/{{room.room_value}}')
-                                            | {{room.room}}
+                                            | {{room.room_name}}
                                             span.block-list-label {{room.users.length}}
 
                         .grid-content.collapse.shrink.avatar-section
                             img(src='http://placehold.it/50x50')
-                            |             Regina George
+                            |             {{currentUserName}}
                     .grid-block.small-12.medium-6.vertical
                         ng-view
                     .grid-content.medium-3.show-for-medium.message-side-bar
