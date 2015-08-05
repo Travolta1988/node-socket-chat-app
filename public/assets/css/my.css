@@ -1,0 +1,59 @@
+﻿@font-face {
+        font-family:"CocaCola";
+        src: url("../font/Coca_Cola_ii/cocacolaii.eot?") format("eot"),
+        url("../font/Coca_Cola_ii/cocacolaii.woff") format("woff"),
+        url("../font/Coca_Cola_ii/cocacolaii.ttf") format("truetype"),
+        url("../font/Coca_Cola_ii/cocacolaii.svg#CocaColaii") format("svg");
+        font-weight:normal;
+        font-style:normal;
+    }
+
+.button, button {
+    background: #FE0000;
+}
+
+#header {
+    text-align: center;
+    background: #FE0000;
+    border-bottom: 3px solid rgb(149, 0, 0);
+}
+
+#header h3 {
+    color: #fff;
+    font-family: "CocaCola",cursive;
+    font-size: 35px;
+    line-height: 29px;
+    padding-top: 14px;
+}
+
+.message-input {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    box-shadow: 0 -1px 9px #ddd;
+    height: 100px;
+    padding: 20px 10px 10px 10px !important;
+    position: fixed;
+    left: 25%;
+    right: 25%;
+}
+
+.message-input input {
+    height: 45px;
+}
+
+#messages-section {
+    position: absolute;
+    bottom: 100px;
+    top: 0;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.avatar-section {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -1px 9px #ddd;
+    height: 100px;
+    padding: 10px 10px 20px !important;
+}

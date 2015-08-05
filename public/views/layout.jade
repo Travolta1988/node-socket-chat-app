@@ -5,6 +5,7 @@ html(lang='en', ng-app='greenchat')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         title #{title}
         link(href='assets/css/app.css', rel='stylesheet', type='text/css')
+        link(href='assets/css/my.css', rel='stylesheet', type='text/css')
         script(src='assets/js/routes.js')
         script(src='assets/js/foundation.js')
         script(src='assets/js/angular.js')
@@ -26,15 +27,7 @@ html(lang='en', ng-app='greenchat')
         .grid-frame
             .grid-block.collapse.medium-12.large-12.vertical
                 #header.shrink.collapse.grid-content
-                    ul.menu-bar.primary
-                        li.hide-for-medium
-                            a(zf-open='sidebar', href='#') Menu
-                        li
-                            a(href='#') Link 1
-                        li
-                            a(href='#') Link 2
-                        li
-                            a(href='#') Link 3
+                    h3 Coca-Cola Chat
                 .grid-block
                     #sidebar.grid-block.small-12.medium-3.vertical(zf-panel='', position='left')
                         .grid-content.collapse.shrink.hide-for-medium
