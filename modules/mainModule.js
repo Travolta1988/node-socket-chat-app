@@ -17,9 +17,11 @@ var mainModule = function(server) {
             socket.room = room;
             socket.join(room);
         });
+
+        socket.on("typing", function(data) {
+            console.log(data);
+            io.sockets.emit("isTyping", {isTyping: data, person: 'defaultperson'});
+        });
     });
-
-
-
     };
 module.exports = mainModule;

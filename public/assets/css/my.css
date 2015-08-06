@@ -46,7 +46,7 @@
     position: absolute;
     bottom: 100px;
     top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 100%;
 }
 
@@ -56,4 +56,62 @@
     box-shadow: 0 -1px 9px #ddd;
     height: 100px;
     padding: 10px 10px 20px !important;
+}
+
+#user-avatar img {
+    border: 2px solid #950000;
+    border-radius: 15%;
+    margin: 16px;
+    width: 57px;
+    height: 57px;
+}
+
+#user-message {
+    padding-left: 20px;
+}
+
+#user-message h4 {
+    color: #950000;
+    font-family: "CocaCola", cursive;
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+#user-message p {
+    color: #666;
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 30px;
+    word-wrap: break-word;
+}
+
+.button-send-message {color: #fff;
+display: inline-block;
+font-family: "CocaCola",cursive;
+font-size: 23.9px;
+height: 45px;
+line-height: 10px;
+}
+
+
+#message-panel {
+    background: #EBEBEB;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding-left: 10px;
+}
+
+#who-is-typing {
+    font-size: 13px;
+    position: absolute;
+    bottom: -10px;
+    display: none;
+    color: #C1C1C1;
+}
+
+#who-is-typing .who-type {
+    color: #666;
+    text-decoration: underline;
+    font-weight: bold;
 }

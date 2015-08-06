@@ -7,5 +7,4 @@ greenchat.controller('greenchatCtrl', function($rootScope, $scope, socket, $fire
 
     $scope.currentUserName = prompt('What is your name?');
 
-    (function($) {})(jQuery);
 });

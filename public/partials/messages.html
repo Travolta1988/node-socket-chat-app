@@ -1,10 +1,15 @@
 <div class="grid-content" id="messages-section">
-    <div ng-repeat="user in usersInGroup">
-        <h4><img src="http://placehold.it/30x30"/> {{user[0].userMessage.username}}</h4>
-        <p>{{user[0].userMessage.message_text}}</p>
-        <hr/>
+    <div ng-repeat="user in usersInGroup" id="message-panel">
+        <div class="grid-block">
+            <div class="large-1" id="user-avatar"><img src="../assets/images/default.jpeg"/></div>
+            <div class='large-11' id="user-message">
+                <h4>{{user[0].userMessage.username}}</h4>
+                <p>{{user[0].userMessage.message_text}}</p>
+            </div>
+        </div>
     </div>
-
 </div>
 <div class="message-input grid-content collapse shrink"><span class="inline-label">
-  <input type="text" placeholder="Message" id="message-textarea"/><a href="#" class="button-send-message button">Send</a></span></div>
+  <input type="text" placeholder="Message" id="message-textarea"/><p  class="button-send-message button">Send</p></span>
+    <p id="who-is-typing"> is typing message</p>
+</div>
